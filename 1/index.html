@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Project 1</title>
     <style>
@@ -7,10 +8,87 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .vertical {
+            flex-direction: column;
+        }
+
+        img {
+            width: 50%;
+        }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <h1>Welcome to Project 1!</h1>
-    <img src="data_jpgs/cathedral.jpg" alt="cathedral">
+    <div class="flex-container vertical"></div>
+        <div class="flex-container">
+            <img src="data_jpgs/cathedral.jpg" alt="cathedral">
+            <img src="output/cathedral.jpg" alt="cathedral">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/church.jpg" alt="church">
+            <img src="output/church.jpg" alt="church">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/emir.jpg" alt="emir">
+            <img src="output/emir.jpg" alt="emir">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/harvesters.jpg" alt="harvesters">
+            <img src="output/harvesters.jpg" alt="harvesters">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/icon.jpg" alt="icon">
+            <img src="output/icon.jpg" alt="icon">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/lady.jpg" alt="lady">
+            <img src="output/lady.jpg" alt="lady">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/melons.jpg" alt="melons">
+            <img src="output/melons.jpg" alt="melons">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/monastery.jpg" alt="monastery">
+            <img src="output/monastery.jpg" alt="monastery">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/onion_church.jpg" alt="onion_church">
+            <img src="output/onion_church.jpg" alt="onion_church">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/sculpture.jpg" alt="sculpture">
+            <img src="output/sculpture.jpg" alt="sculpture">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/self_portrait.jpg" alt="self_portrait">
+            <img src="output/self_portrait.jpg" alt="self_portrait">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/three_generations.jpg" alt="three_generations">
+            <img src="output/three_generations.jpg" alt="three_generations">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/tobolsk.jpg" alt="tobolsk">
+            <img src="output/tobolsk.jpg" alt="tobolsk">
+        </div>
+        <div class="flex-container">
+            <img src="data_jpgs/train.jpg" alt="train">
+            <img src="output/train.jpg" alt="train">
+        </div>
+    </div>
 </body>
+<script>
+</script>
+
 </html>
