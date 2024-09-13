@@ -192,10 +192,32 @@
             
             <br>I cropped the edges and calculated the magnitude of the gradient (from 2 convolutions) for edge detection purposes. Then, I used NCC. This worked better than just NCC.
             
+            <br>These were the results with just NCC (first four images):
+            
+            <br>cathedral: exact same
+            <br>church: exact same
+            <br>clothes: off by one (116 instead of 115; no discernible difference)
+            <br>emir: big error:
+            
+            <br>aligning green and blue pics
+            horizontal and vertical displacement needed to match green or red to blue:
+            24 49
+            
+            <br>aligning red and blue pics
+            horizontal and vertical displacement needed to match green or red to blue:
+            -203 95 instead of 40 107
+
+            <br>For pics, see first 3 pics. You may have to scroll horizontally. Left pic is original. Middle pic is with edge detection with gradient magnitudes and NCC. Right pic is with just NCC.
+            
             <br>If you want to see the shifted green image on top of the blue image and the shifted red image on top of the blue image, see README.txt.
             
             <br>I calibrated an adjusting depth that depends on the size of the image so that the program can detect shifts as large as possible without picking the wrong peak early on in the pyramid algorithm and being completely off.
         </p>
+        <div class="flex-container">
+            <img src="data_jpgs/emir.jpg" alt="emir">
+            <img src="output/emir.jpg" alt="emir">
+            <img src="ncc_data_jpgs/emir.jpg" alt="emir">
+        </div>
         <div class="flex-container">
             <img src="data_jpgs/cathedral.jpg" alt="cathedral">
             <img src="output/cathedral.jpg" alt="cathedral">
